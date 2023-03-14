@@ -50,12 +50,19 @@ function display_all() {
         myTable += "<td><button onclick='remove_selection(" + i + ")'>Remove</button></td>";
     }
 
+    
     myTable += "</table>";
-    myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
-
-
+    // myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
     document.getElementById("demo").innerHTML = myTable;
-}
+
+};
+
+
+document.getElementById('checkout-btn').onclick = function(){
+        return document.getElementById('total').innerHTML = "Total: " + totalOrderAmt;
+};
+
+
 
 
 
